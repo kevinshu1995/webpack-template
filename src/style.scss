@@ -1,0 +1,9 @@
+/*
+    Using `~` is deprecated and can be removed from your code (we recommend it), but we still support it for historical reasons.
+    Why can you remove it? The loader will first try to resolve @import as a relative path.
+    If it cannot be resolved, then the loader will try to resolve @import inside node_modules.
+*/
+// @import "~bootstrap"; (可以用 `~` 引入 node_modules 的依賴檔，但已被棄用，現在可以省略)
+@import "bootstrap";
+// So, It's important to write relative file path.
+@import "./assets/style/custom";
