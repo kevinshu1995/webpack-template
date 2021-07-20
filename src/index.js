@@ -1,10 +1,14 @@
 import _ from "lodash";
 import "./style.scss";
+import { aPromise } from "./assets/js/index";
+
+aPromise(function () {
+    console.log("test");
+}).then(fn => fn());
 
 function component() {
     const element = document.createElement("div");
 
-    // Lodash, currently included via a script, is required for this line to work
     element.innerHTML = _.join(["Hello", "World"]);
 
     return element;
